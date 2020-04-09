@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Window</title>
+        <style>
+
+            
+            .relative {
+                position:relative;
+                border:orange 3px solid;
+                padding:10px;
+                height:200px;
+                margin-bottom:20px;
+                left:50px;
+            }
+            
+            .pane1 {
+                position:absolute;
+                border:red 3px solid;
+                height:100px;
+                width:50%;
+                bottom:20px; /* gotta switch the bottom left to right top*/
+                left:20px;
+            }
+          .pane2 {
+                position:absolute;
+                border:red 3px solid;
+                height:100px;
+                width:50%;
+                top:20px;
+                left:20px;
+            }
+          .pane3 {
+                position:absolute;
+                border:red 3px solid;
+                height:100px;
+                width:50%;
+                bottom:20px;
+                right:20px;
+            }
+          .pane4 {
+                position:absolute;
+                border:red 3px solid;
+                height:100px;
+                width:50%;
+                top:20px;
+                right:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> window </h1>
+        
+        
+        <div class="relative">
+        Hello! I'm a relative div. You can reposition me relative to where I would usually appear if I were static. I am currently 50px away from the left, in other words, 50px to the right.  
+            
+        <div class="pane1">
+        #1
+        </div> 
+          <div class="pane2">
+        #2
+        </div> 
+          <div class="pane3">
+        #3
+        </div> 
+          <div class="pane4">
+        #4
+        </div> 
+        </div>    
+        
+         <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    </body>
+</html>
